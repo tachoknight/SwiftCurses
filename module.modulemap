@@ -1,4 +1,4 @@
-module Ccurses [system] {
+module SwiftCurses [system] {
   header "/usr/include/ncurses.h"
   link "ncursesw"
   export *
