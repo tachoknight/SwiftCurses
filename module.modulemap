@@ -1,5 +1,12 @@
-module SwiftCurses [system] {
-  header "/usr/include/ncurses.h"
-  link "ncursesw"
-  export *
+module SwiftCursesMac [system] {
+    header "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ncurses.h"
+    link "ncursesw"
+    export *
 }
+
+module SwiftCursesLinux [system] {
+    header "/usr/include/ncurses.h"
+    link "ncursesw"
+    export *
+}
+
