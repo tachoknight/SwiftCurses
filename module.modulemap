@@ -1,12 +1,16 @@
 module SwiftCursesMac [system] {
     header "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ncurses.h"
+    header "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/form.h"
     link "ncursesw"
+    link "form"
     export *
 }
 
 module SwiftCursesLinux [system] {
     header "/usr/include/ncurses.h"
+    header "/usr/include/form.h"
     link "ncursesw"
+    link "form"
     export *
 }
 
